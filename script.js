@@ -103,3 +103,26 @@ linksWithoutRefresh.forEach(link => {
 /** Edit component */
 
 /** Delete component */
+
+/** Total price */
+
+const totalPrice = document.getElementById("total-price");
+
+/** Calculate total price */
+function calculateTotalPrice() {
+    const components = JSON.parse(localStorage.getItem('components')) || [];
+    const total = components.reduce((sum, component) => {
+        // Convertir el precio a un número antes de sumar
+        const price = parseFloat(component.price.replace(/\./g, '').replace(',', '.'));
+        return sum + price;
+    }, 0);
+    totalPrice.textContent = `${total.toLocaleString('es-ES')} $`;
+}
+
+// calculate total price when charge the page
+window.addEventListener('load', calculateTotalPrice);
+
+// calculate total price when add a new component
+form.addEventListener('submit', () => {
+    calculateTotalPrice();
+});
