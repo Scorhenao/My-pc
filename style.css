@@ -9,6 +9,7 @@ h1{
 
 ul{
     list-style-type: none;
+    justify-content: center;
 }
 
 li{
@@ -21,6 +22,12 @@ b{
 }
 
 
-@media (width < 750px) {
-    
+@media (width < 560px) {
+    body{
+        padding:1px !important;
+    }
+    ul{
+        justify-content: unset !important;
+        width: 100% !important;
+    }
 }

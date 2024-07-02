@@ -78,9 +78,9 @@ function addComponentToList(component) {
     const contentComponent = document.getElementById("content-components");
 
     const newComponent = document.createElement("ul");
-    newComponent.className = "d-flex gap-2 justify-content-center align-items-center";
+    newComponent.className = "d-flex gap-2 align-items-center p-0";
     newComponent.innerHTML =
-    `<li class="bg-gradient border-dark w-50 shadow"><b class="d-flex justify-content-center" id="name-component">\--${component.name}--/</b>
+    `<li class="bg-gradient border-dark w-100 shadow"><b class="d-flex justify-content-center" id="name-component">\--${component.name}--/</b>
         <a href="" class="btn btn-warning" id="edit-component">Editar</a>
         <a href="" class="btn btn-danger" id="drop-component">Eliminar</a>
         <hr>
