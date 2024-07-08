@@ -1,0 +1,1 @@
+git remote set-url origin https://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@github.com/Scorhenao/My-pc.git
