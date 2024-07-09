@@ -92,7 +92,7 @@ function addComponentToList(component) {
             <hr>
             <p class="description-component">${component.description}.</p>
             <h5>Precio: <b class="precio-component">${component.price}$</b></h5>
-            <a class="link-component" href="${component.link}" class="btn btn-success d-flex justify-content-center">Get it</a>
+            <a class="link-component btn btn-success d-flex justify-content-center" href="${component.link}">Get it</a>
         </li>`;
 
     contentComponent.appendChild(newComponent);
