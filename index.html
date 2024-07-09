@@ -75,23 +75,30 @@
     </section>
 
     <!--zona para editar componentes-->
-    <section id="edit-component-section" class="d-none">
+    <section id="edit-component-section" class="w-100 justify-content-center d-none">
         <h1>Edit Component</h1>
-        <form id="edit-component-form">
-            <label for="edit-component-name">Name:</label>
-            <input id="edit-component-name" type="text" required>
+        <form id="edit-component-form" class="w-75 bg-black p-4 position-absolute" style="border-radius: 10px; bottom: 5%;">
+            <a href="" class="d-flex btn btn-close bg-danger"></a>
+            <div class="mb-3">
+                <label for="edit-component-name" class="form-label">Nombre:</label>
+                <input id="edit-component-name" class="form-control" type="text" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="edit-component-description" class="form-label">Descripcion:</label>
+                <input id="edit-component-description" class="form-control" type="text" required>
+            </div>
             
-            <label for="edit-component-description">Description:</label>
-            <input id="edit-component-description" type="text" required>
-            
-            <label for="edit-component-price">Price:</label>
-            <input id="edit-component-price" type="text" required>
-            
-            <label for="edit-component-link">Link:</label>
-            <input id="edit-component-link" type="url" required>
-            
-            <button type="submit">Save</button>
-            <button class="btn-close">Close</button>
+            <div class="mb-3">
+                <label for="edit-component-price" class="form-label">Precio:</label>
+                <input id="edit-component-price" class="form-control" type="text" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="edit-component-link" class="form-label">Link:</label>
+                <input id="edit-component-link" class="form-control" type="url" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
         </form>
     <!--script-->
     <script src="./script.js"></script>
