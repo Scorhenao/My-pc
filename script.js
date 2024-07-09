@@ -164,8 +164,6 @@ function deleteComponent(component) {
     calculateTotalPrice();
 }
 
-
-
 /** Total price */
 const totalPrice = document.getElementById("total-price");
 
