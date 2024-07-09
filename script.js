@@ -159,7 +159,11 @@ function deleteComponent(component) {
     // Update the displayed list of components
     contentComponent.innerHTML = '';
     updatedComponents.forEach(addComponentToList);
+
+    // Recalculate total price after deletion
+    calculateTotalPrice();
 }
+
 
 
 /** Total price */
